@@ -1,0 +1,11 @@
+server:
+  port: 8180
+
+spring:
+  application:
+    name: account-service
+  cloud:
+    config:
+      name: microservices
+  config:
+    import: optional:configserver:http://localhost:8888
